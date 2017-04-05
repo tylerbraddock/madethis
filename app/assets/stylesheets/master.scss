@@ -190,29 +190,9 @@ abbr[title] {
   margin: 10px;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .top-nav .add a {
     font-size: 14px;
-  }
-
-  .handle, .card p, .card .message, .comment_handle {
-    font-size: 16px;
-  }
-
-  .gram-actions a, .comment {
-    font-size: 14px;
-  }
-
-  .comments h3 {
-    font-size: 1.5rem;
-  }
-
-  .comments h4 {
-    font-size: 1.25rem;
-  }
-
-  .my-btn {
-    font-size: 18px;
   }
 
   .brand {
@@ -221,7 +201,7 @@ abbr[title] {
 
   .top-nav .add {
     margin-top: 14px;
-  }
+  }|
 
   .top-nav {
     padding-top: 10px;
