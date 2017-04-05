@@ -109,7 +109,7 @@ input#user_remember_me.boolean.optional {
 }
 
 .gram-actions {
-  margin-left: auto;
+  text-align: right;
 }
 
 .gram-actions a {
@@ -206,4 +206,9 @@ abbr[title] {
   .top-nav {
     padding-top: 10px;
   }
+}
+
+input#gram_picture.file.required {
+  width: 100%;
+  font-size: 1rem;
 }
