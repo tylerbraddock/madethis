@@ -5,7 +5,8 @@
         <%= gram.user.email %>
       </div>
       <%= image_tag gram.picture, class: 'img-fluid' %>
-      <p><%= gram.message %></p>
+      <p class="gram-msg"><%= gram.message %></p>
+      <hr class="separator-right" />
 
       <div class="gram-actions float-right">
         <% if current_user && current_user == gram.user %>
@@ -16,6 +17,7 @@
       <br class="clear-fix" />
 
       <div class="comments">
+        <hr class="separator-left" />
         <h3>Comments</h3>
         <% gram.comments.each do |comment| %>
           <div class="comment">
@@ -26,9 +28,10 @@
           </div>
         <% end %>
 
+        <hr class="separator-left share" />
         <h4>Share your thoughts</h4>
         <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
-          <%= f.input :message %>
+          <%= f.input :message, label: false %>
           <%= f.submit 'Post Comment', class: 'my-btn' %>
         <% end %>
       </div>
