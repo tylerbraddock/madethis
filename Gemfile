@@ -71,3 +71,6 @@ gem "figaro"
 
 # Use for carrierwave to Amazon S3 communication
 gem "fog"
+
+# Use for icons
+gem "font-awesome-rails"
